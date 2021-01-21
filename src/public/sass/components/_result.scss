@@ -1,0 +1,149 @@
+.result {
+  padding: 3rem 0;
+  width: 90%;
+  transition: all 0.2s;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+
+  &:not(:last-child) {
+    border-bottom: 1px dashed $color-primary-dark;
+  }
+
+  &__price {
+    font-size: 3rem;
+    padding: 0.8rem 1.5rem;
+    font-weight: 400;
+    border-radius: 0.6rem;
+    color: $color-primary-dark;
+    display: inline-block;
+    @include shadow-bottom;
+    background-color: $color-white;
+  }
+
+  &__carrier {
+    position: absolute;
+    right: 1%;
+  }
+
+  &__carrier-img {
+    width: 7rem;
+    border-radius: 5px;
+  }
+
+  &__details {
+    position: relative;
+    font-size: $default-font-size;
+    width: 80%;
+    margin: 0 auto;
+    @include clearfix;
+  }
+
+  &__flight-from {
+    float: left;
+    padding: 2rem 0;
+  }
+
+  &__time {
+    font-size: 2.2rem;
+    display: inline-block;
+    width: 100%;
+  }
+
+  &__airport {
+    font-size: $default-font-size;
+    display: inline-block;
+    width: 100%;
+  }
+
+  &__timing {
+    font-size: 1.4rem;
+    @include center-horizontal-vertical;
+    height: 100%;
+    min-height: 6rem;
+    width: 50%;
+  }
+
+  &__duration {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+  }
+
+  &__arrow {
+    font-size: 2.4rem;
+    @include center-horizontal-vertical;
+  }
+
+  &__direct {
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-secondary;
+    font-style: italic;
+  }
+
+  &__flight-to {
+    float: right;
+    padding: 2rem 0;
+  }
+
+  &__full {
+    padding: 1.5rem 2.5rem;
+    width: 100%;
+  }
+
+  &__info {
+    padding: 0.5rem 2.5rem 1rem 2.5rem;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+  }
+
+  &__thumb {
+    float: right;
+    @include respond(phone) {
+      float: none;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__img {
+    width: 9rem;
+  }
+
+  &__img2 {
+    width: 12rem;
+  }
+
+  &__text {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__icon {
+    font-size: 2.2rem;
+    color: $color-yellow;
+    text-shadow: 0 -1px 1px #fff, 0 2px 1px rgb(0, 0, 0);
+    margin-right: 0.5rem;
+  }
+
+  &__button {
+    &:not(:last-child) {
+      margin-right: 0.6rem;
+    }
+  }
+}

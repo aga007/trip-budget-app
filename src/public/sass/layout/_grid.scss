@@ -1,0 +1,67 @@
+.layout {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  &__col1 {
+    flex-grow: 1;
+
+    @include respond(tab-port) {
+      height: fit-content;
+    }
+  }
+
+  &__col1-division {
+    display: flex;
+    flex-direction: column;
+
+    @include respond(tab-port) {
+      height: fit-content;
+    }
+
+    @include respond(phone) {
+    }
+  }
+
+  &__col2 {
+    flex: 0 0 46rem;
+
+    @include respond(tab-port) {
+      flex: 1 1 100%;
+      position: relative;
+    }
+
+    @include respond(big-desktop) {
+      flex: 0 0 55rem;
+    }
+  }
+}
+
+///// NOT USED?? /////
+
+[class^='col-'] {
+  float: left;
+
+  @include respond(tab-port) {
+    width: 100% !important;
+  }
+}
+.col-1-of-2 {
+  width: 50%;
+}
+.col-1-of-3 {
+  width: 33%;
+}
+.col-1-of-4 {
+  width: 25%;
+}
+.col-2-of-3 {
+  width: 67%;
+}
+.col-3-of-4 {
+  width: 75%;
+}

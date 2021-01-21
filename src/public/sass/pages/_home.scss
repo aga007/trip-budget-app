@@ -1,0 +1,35 @@
+.section-budget {
+  background-size: cover;
+  background-position: center; // center, top, bottom
+  position: relative;
+  z-index: 2;
+
+  @include respond(tab-port) {
+    height: fit-content;
+  }
+}
+
+.section-search {
+  background-image: linear-gradient(to bottom, $color-tertiary, $color-tertiary2);
+  height: 100%;
+  width: 46rem;
+  overflow: auto;
+  position: fixed;
+  z-index: 2;
+  @include respond(tab-port) {
+    position: static;
+    width: 100%;
+  }
+
+  @include respond(big-desktop) {
+    width: 55rem;
+  }
+}
+
+.section-calculations {
+  overflow: auto;
+  position: relative;
+  z-index: 2;
+  background-size: cover;
+  background-position: center; // center, top, bottom
+}

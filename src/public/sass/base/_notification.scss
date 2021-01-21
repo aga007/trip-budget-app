@@ -1,0 +1,45 @@
+.notification {
+  @include shadow-bottom;
+  top: 28%;
+  left: 50%;
+  color: $color-white;
+  position: absolute;
+  transform: translate(-50%, -50%) scaleY(0);
+  padding: 1rem 2rem;
+  font-size: $default-font-size;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
+
+  @include respond(tab-port) {
+    position: fixed;
+    width: fit-content;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  &--success {
+    background-color: $color-green;
+    animation: notification 3s ease-in-out;
+    display: block;
+  }
+
+  &--error {
+    background-color: $color-red;
+    animation: notification 3s ease-in-out;
+    display: block;
+  }
+
+  &--info {
+    background-color: $color-orange;
+    animation: notification 3s ease-in-out;
+    display: block;
+  }
+
+  &__icon {
+    color: $color-white;
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+}

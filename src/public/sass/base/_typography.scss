@@ -1,0 +1,72 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px */
+  line-height: 1.5;
+  color: $color-grey-dark;
+}
+
+.heading-primary {
+  font-size: 3.5rem;
+  color: $color-secondary;
+  text-transform: uppercase;
+  font-family: 'Gravitas One', cursive;
+  text-shadow: 0 -1px 1px $color-secondary-light, 0 2px 1px rgb(0, 0, 0);
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  color: $color-secondary;
+  text-transform: uppercase;
+  font-family: 'Gravitas One', cursive;
+  text-shadow: 0 -1px 1px $color-secondary-light, 0 2px 1px rgb(0, 0, 0);
+
+  &--blue {
+    color: $color-primary;
+    text-shadow: 0 -1px 1px $color-primary-light, 0 2px 1px rgb(0, 0, 0);
+  }
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  color: $color-primary;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading-quaternary {
+  font-size: 1.6rem;
+  color: $color-primary;
+  font-weight: 600;
+  text-transform: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  font-family: 'Open Sans', sans-serif;
+  color: $color-grey-dark;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.link {
+  &,
+  &:visited {
+    font-size: inherit;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+    text-decoration: underline;
+    color: $color-red;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-red-dark;
+  }
+}

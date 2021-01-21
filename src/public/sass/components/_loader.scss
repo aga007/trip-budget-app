@@ -1,0 +1,28 @@
+.loader {
+    margin: 5rem auto;
+    text-align: center;  
+
+    &__icon {
+        font-size: 6rem;
+        color: $color-primary;
+        animation: inAndOut 3s infinite linear; 
+      }
+
+    &__txt {
+        font-size: 1.5rem;
+        font-family: Lato;
+        letter-spacing: .2rem;
+        margin-top: 2.5rem;
+       // color: $color-primary;
+        overflow: hidden;
+        background: linear-gradient(90deg, $color-primary, $color-primary-light);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 4s linear infinite;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+}
+
+ 

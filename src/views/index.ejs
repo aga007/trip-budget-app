@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trip Budget Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="notification"></div>
+  <div id="budget-list" class="list list__hidden"></div>
+
+  <!--<script src="js/bundle.js"></script> -->  
+
+   
+  <div class="layout">
+    <div class="layout__col1 bg-picture">
+      <ul class="bg-slideshow">
+        <li class="bg-slideshow__li"><span class="bg-slideshow__span">Img 1</span></li>
+        <li class="bg-slideshow__li"><span class="bg-slideshow__span">Img 2</span></li>
+        <li class="bg-slideshow__li"><span class="bg-slideshow__span">Img 3</span></li>
+        <li class="bg-slideshow__li"><span class="bg-slideshow__span">Img 4</span></li>
+        <li class="bg-slideshow__li"><span class="bg-slideshow__span">Img 5</span></li>
+        <li class="bg-slideshow__li"><span class="bg-slideshow__span">Img 6</span></li>
+      </ul>
+      <div class="layout__col1-division">
+      <section class="section-budget">
+        <div class="budget">
+            <h1 class="heading-primary budget__title"> Your trip budget </h1>
+            <div class="budget__box">
+              <div class="budget__amount">
+                <div class="budget__currency">
+                    €
+                </div>
+                <div class="budget__numberbox">
+                  <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <div class="budget__numberbox">
+                  <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <div class="budget__numberbox">
+                  <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <div class="budget__virgola">
+                    ,
+                </div>
+                <div class="budget__numberbox">
+                  <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <div class="budget__numberbox">
+                  <i class="fas fa-umbrella-beach"></i>
+                </div>
+                
+              </div>
+              <div class="budget__button">
+                <div class="btn btn__big" id="expenses-list">List of expenses</div>
+              </div>
+             
+
+            </div>
+
+           
+        </div>
+        
+      </section>
+
+      <section class="section-calculations" id="section-calculations">
+
+         <div class="calculations">
+            <h2 class="heading-secondary u-margin-bottom-small u-center-text"> Calculations </h2>
+            <div class="calculations__container">
+          
+            </div>
+
+
+            <div class="calculations__buttons">
+                <button class="btn btn__big  u-margin-right-small u-margin-bottom-small show-steps">Start planning</button>
+                <button class="btn btn__big  u-margin-bottom-small new-trip">Clear data</button>
+            </div>
+        </div>
+
+      </section>
+    </div>
+           <!-- COPYRIGHT -->
+    <p class="calculations__copyright">Aga | &copy; 2020 All rights reserved</p>
+    </div>
+      <div class="layout__col2">
+        <section class="section-search" id="section-search">
+          <div class="search">
+              <div class="search__logobox">
+                <img srcset="/images/logo-1x.png 150w, /images/logo-2x.png 300w"
+                sizes="(max-width: 75em) 11vw, (max-width: 56.25em) 13vw, (max-width: 37.5em) 20vw, 150px" 
+                alt="Logo" 
+                class="search__logo"  
+                src="/images/logo-2x.png"> 
+              </div>
+
+                <!--img srcset size of the image 80w = 80px width
+                  sizes for different screen width. 
+                  1200px img width 58px >> 58/1200 = 0.04833 so 5% so 5vw
+                  900px 600px
+                  -->
+              <div class="search__box">
+              
+              <h2 id="search-title" class="heading-secondary heading-secondary--blue u-center-text u-margin-bottom-small"> Search </h2>
+  
+              <div class="request__box">
+                <div class="search__button">
+                    <button class="search-flight btn btn__big ">Your flights </button>
+                </div>
+                <div class="search__button">
+                    <button class="search-hotel btn btn__big  ">Your hotel</button>
+                </div>
+                <div class="search__button">
+                    <button class="search-car btn btn__big  ">Your car</button>
+                </div>
+
+            </div>
+            <div class="search__pagination-box">
+                
+            </div>
+          
+            </div>
+
+        </div>
+                            <!-- COPYRIGHT SMALL SCREEN-->
+    <p class="search__copyright">Aga | &copy; 2020 All rights reserved</p>
+        </section>
+
+
+      </div>
+  </div>
+<!-- SIDEBAR -->
+  <div class="steps">
+    <div class="steps__details steps__hidden">
+        <h3 class="heading-tertiary u-margin-bottom-small"> Add Expense: </h3>
+        <ul class="steps__list">
+            <li class="steps__item"> <button class="search-flight btn btn__big ">Flights</button></li> 
+            <li class="steps__item"><button class="search-hotel btn btn__big ">Accomodation </button></li> </li> 
+            <li class="steps__item"><button class="search-car btn btn__big ">Car </button></li> </li> 
+            <li class="steps__item"><button class="add-food btn btn__big ">Food</button></li> </li> 
+            <li class="steps__item"><button class="add-other-expense btn btn__big ">Other expense</button></li> </li>  
+        </ul> 
+    </div>
+    
+    <div class="steps__handle"> <i class="fas fa-angle-double-right steps__icon"></i> </div>  
+  </div>
+<!-- END OF SIDEBAR -->
+</body>
+</html>
